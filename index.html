@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Chao</title>
+    <meta name="description" content="Chris Chao - Researcher in LLM & VLM at Boston University.">
+    <style>
+        :root {
+            --text-primary: #111;
+            --text-secondary: #555;
+            --link-color: #0056b3; /* Classic academic blue */
+            --bg-color: #ffffff;
+            --max-width: 800px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7; /* Optimized for reading */
+            font-size: 16px;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* Profile Header */
+        header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            flex-wrap: wrap-reverse; /* Text on top on mobile if needed, or side-by-side */
+        }
+
+        .header-text {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .social-links {
+            font-size: 0.95rem;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: var(--link-color);
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        .social-links a:hover {
+            border-bottom: 1px solid var(--link-color);
+        }
+
+        /* Profile Image */
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%; /* Circular */
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Main Content Text */
+        .bio-text p {
+            margin-bottom: 1.5em;
+            text-align: justify; /* Cleaner edges */
+        }
+
+        strong {
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* The Special Note Box */
+        .note-box {
+            margin-top: 40px;
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #333;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Link Styling in Text */
+        .bio-text a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            text-decoration-color: #ccc;
+            text-underline-offset: 2px;
+        }
+        
+        .bio-text a:hover {
+            text-decoration-color: var(--link-color);
+            color: var(--link-color);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+            }
+            .header-text {
+                padding-right: 0;
+                margin-top: 20px;
+            }
+            .bio-text p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="header-text">
+                <h1>Chris Chao</h1>
+                <div class="subtitle">
+                    B.S. & M.S. Student at Boston University
+                </div>
+                <div class="social-links">
+                    <a href="mailto:your_email@bu.edu">Email</a>
+                </div>
+            </div>
+            <!-- Upload your photo as 'me.jpg' to the same folder -->
+            <img src="me.jpg" alt="Chris Chao" class="profile-pic">
+        </header>
+
+        <div class="bio-text">
+            <p>
+                I am currently a combined B.S. and M.S. student at <a href="https://www.bu.edu/" target="_blank">Boston University</a>. Previously, I gained industrial research and engineering experience as an intern at <strong>Google</strong> and <strong>TikTok</strong>.
+            </p>
+
+            <p>
+                My research focuses on <strong>Large Language Models (LLMs)</strong> and <strong>Vision-Language Models (VLMs)</strong>. I am particularly interested in exploring <strong>training-free methods</strong> to unlock the potential of foundation models during inference time. My research philosophy is rooted in finding "simple but effective" solutions to complex problems.
+            </p>
+
+            <!-- The Highlight Note -->
+            <div class="note-box">
+                <span style="font-style: normal;">📢</span> 
+                <strong>Current Focus:</strong> I am currently reproducing all training-free methods submitted to ICLR 2026. Code and insights will be released on my <a href="https://github.com/Chrischao01/ICLR-2026-Training-free-LLM-Methods" style="text-decoration: none; color: #0056b3; font-weight: bold;">GitHub</a> soon!
+            </div>
+        </div>
+
+        <footer style="margin-top: 60px; font-size: 12px; color: #999; text-align: center;">
+            &copy; 2025 Chris Chao.
+        </footer>
+
+    </div>
+
+</body>
+</html>
